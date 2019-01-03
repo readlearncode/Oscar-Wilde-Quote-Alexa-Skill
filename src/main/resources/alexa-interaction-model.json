@@ -1,0 +1,67 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "oscar wilde",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "QuoteIntent",
+          "slots": [
+            {
+              "name": "subject",
+              "type": "subject"
+            }
+          ],
+          "samples": [
+            "for a quote about {subject}",
+            "give me a quote about {subject}",
+            "for a quote",
+            "give me a quote"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "subject",
+          "values": [
+            {
+              "name": {
+                "value": "women"
+              }
+            },
+            {
+              "name": {
+                "value": "men"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
